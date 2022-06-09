@@ -1,0 +1,219 @@
+.custom-shape-divider-bottom-1654750887 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1654750887 svg {
+	position: relative;
+	display: block;
+	width: calc(121% + 1.3px);
+	height: 99px;
+}
+
+.custom-shape-divider-bottom-1654750887 .shape-fill {
+	fill: #FFFFFF;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: black
+}
+body{
+	margin: 0;
+}
+.sectionOne{
+	position: relative;
+	height: 450px;
+	background: rgb(0,176,255);
+	background: linear-gradient(243deg, rgba(0,176,255,1) 0%, rgba(83,160,238,1) 38%, rgba(50,200,239,1) 68%, rgba(115,218,237,1) 68%, rgba(148,187,233,1) 85%);
+}
+
+.navbar-menu a{
+	padding: 0.7rem;
+	color: rgb(216, 248, 252);
+	font-size: 18px;
+	margin-right: 20px;
+	border-radius: 10px;
+	font-size: 19px;
+	font-weight: 600;
+	transition: 0.5s;
+}
+.navbar-menu a:hover{
+	background-color: #FFFFFF;
+	color: rgb(45, 126, 231)
+}
+
+.navbar{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.navbar-logo{
+	font-size: 22px;
+	font-weight: bold;
+	color: rgb(0, 162, 255)
+}
+.navbar-logo i{
+	color: rgb(216, 186, 17);
+	margin-right: 5px;
+}
+
+.navbar-menu{
+	display: flex;
+}
+.navbar-search input{
+	padding: 0.2rem;
+	outline: none;
+	border-radius: 15px;
+	border:none;
+	transition: 0.5s;
+}
+.navbar-search input:focus{
+	background-color: rgb(83, 150, 226);
+}
+.navbar-search input:focus::placeholder{
+	color: rgb(255, 255, 255);
+}
+
+.navbar-search button{
+	padding: 0.2rem;
+	border-radius: 15px;
+	border:none;
+}
+
+.main-contents{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contents{
+	margin-right: 50px;
+	margin-top: 50px;
+}
+
+#welcome-text{
+	font-size: 30px;
+	color:rgb(214, 231, 241);
+	font-weight: 600;
+}
+@keyframes notificationAnimation {
+	0%{
+			transform: none;
+	}
+	50%{
+			transform: rotateY(180deg);
+	}
+	100%{
+			transform: none;
+	}
+}
+#welcome-text i{
+	color:rgb(216, 186, 17);
+	margin-right: 5px;
+	animation: notificationAnimation 2s ease-in-out infinite;
+}
+
+.to-programs-btn{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.to-programs-btn a{
+	background-color: white;
+	padding-right: 30px;
+	margin-top: 150px;
+	border:none;
+	padding: 8px 25px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px 2px rgb(146, 145, 145);
+	transition: 0.5s;
+}
+.to-programs-btn #expe::before{
+	content: "Expenditure";
+}
+.to-programs-btn #exch::before{
+	content:"Exchange";
+}
+.to-programs-btn #expe:hover,
+.to-programs-btn #exch:hover {
+  animation-play-state: paused;
+	background-color: #2dadf7;
+	color:white
+}
+
+
+.to-programs-btn #expe:hover::before,
+.to-programs-btn #exch:hover::before {
+  content: "Let's Go";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes hideSplashScreen {
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+#splash-screen{
+	background-color: #85c3e7;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 120px;
+	animation: hideSplashScreen 2s ease-in-out forwards;
+	animation-delay: 1s;
+}
+#splash-screen i{
+	color:#478AEF;
+}
