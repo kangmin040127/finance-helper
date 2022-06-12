@@ -6,114 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="expenditure/expenditure.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header">
-        <h1>Expenditure · 지출</h1>
+        <h1>Expenditure</h1>
         <div id="show-totalMoney">
         </div>
     </div>
+
+    
+
+    <!-- 입력 부분 -->
     <section class="separate-section">
         <section class="left-section">
             <div class="left-side-top">
                 <div class="analyze">
-                    <span>지출</span>
-                    <span>분석</span>
-                    <span>느낀점</span>
+                    <span><a href="#">지출</a></span>
+                    <span><a href="#">분석</a></span>
+                    <span><a href="#">느낀점</a></span>
                 </div>
                 
                 <div class="input-area">
-                    <input required id="howMuch" type="text" placeholder="How much?"><br>
-                    <input required id="where" type="text" placeholder="Where you used?"><br>
-                    <input required id="satisfy" type="text" placeholder="Is this essential?  Y or N"><br>
-                    <input id="submit" type="submit">
+									<input required id="thing" type="text" placeholder="Where you used?"><br>
+                  <input required id="howMuch" type="text" placeholder="How much?"><br>
+                  <input required id="satisfy" type="text" placeholder="Is this essential?  Y or N"><br>
+                  <button id="submitBtn">GO</button>
                 </div>  
             </div>
-            <div class="left-side-bottom">
-                <div>
 
+            <!-- 순위 박스 -->
+            <div class="left-side-bottom">
+                <div class="rank">
+                    <header class="rank-header">
+                        <div class="rank-header-text">
+                            Price Rank
+                        </div>
+                    </header>
+										<div id="rank-fact">
+											<!-- input 가격 랭크 들어올자리 -->
+										</div>
                 </div>
             </div>
         </section>
+
+        <!-- 구매 내역 -->
         <section class="right-section">
+            
             <header class="usage-header">
                 <div id="usage-header-text">Usage History</div>
             </header>
+						<div id="history-fact">
+							<!-- input 들어올자리 -->
+						</div>
 
-            <div class="history-contents">
-                <div class="left-history">
-                    <div>물건: 집</div>
-                    <div>요금: 10000000</div>
-                    <div>만족도: 만족안함</div>
-                </div>
-                <div id="right-history">
-                    <img src="https://previews.123rf.com/images/lar01joka/lar01joka1409/lar01joka140900332/31547341-%ED%9D%B0%EC%83%89-%EB%B0%B0%EA%B2%BD%EC%97%90-%EB%86%80%EB%9E%80-%ED%91%9C%EC%A0%95.jpg"/>
-                    <div id="message">
-                        정말 잘 샀다!<br>좋은 소비!
-                    </div>
-                </div>    
-            </div>
-            <div class="history-contents">
-                <div class="left-history">
-                    <div>물건: 집</div>
-                    <div>요금: 10000000</div>
-                    <div>만족도: 만족안함</div>
-                </div>
-                <div id="right-history">
-                    <img src="https://img.freepik.com/free-vector/cartoon-crying-face-upset-emoji-with-tears-falling-from-eyes-vector-dissatisfied-facial-expression-weepie-crybaby-unhappy-negative-feelings-isolated-on-white-background_8071-9166.jpg"/>
-                    <div id="message">
-                        좋지 않은 <br>
-                        소비입니다.
-                    </div>
-                </div>    
-            </div>
-            <div class="history-contents">
-                <div class="left-history">
-                    <div>물건: 집</div>
-                    <div>요금: 10000000</div>
-                    <div>만족도: 만족안함</div>
-                </div>
-                <div id="right-history">
-                    <img src="https://previews.123rf.com/images/lar01joka/lar01joka1409/lar01joka140900332/31547341-%ED%9D%B0%EC%83%89-%EB%B0%B0%EA%B2%BD%EC%97%90-%EB%86%80%EB%9E%80-%ED%91%9C%EC%A0%95.jpg"/>
-                    <div id="message">
-                        좋지 않은 <br>
-                        소비입니다.
-                    </div>
-                </div>    
-            </div>
-            <div class="history-contents">
-                <div class="left-history">
-                    <div>물건: 집</div>
-                    <div>요금: 10000000</div>
-                    <div>만족도: 만족안함</div>
-                </div>
-                <div id="right-history">
-                    <img src="https://img.freepik.com/free-vector/cartoon-crying-face-upset-emoji-with-tears-falling-from-eyes-vector-dissatisfied-facial-expression-weepie-crybaby-unhappy-negative-feelings-isolated-on-white-background_8071-9166.jpg"/>
-                    <div id="message">
-                        좋지 않은 <br>
-                        소비입니다.
-                    </div>
-                </div>    
-            </div>
-            <div class="history-contents">
-                <div class="left-history">
-                    <div>물건: 집</div>
-                    <div>요금: 10000000</div>
-                    <div>만족도: 만족안함</div>
-                </div>
-                <div id="right-history">
-                    <img src="https://previews.123rf.com/images/lar01joka/lar01joka1409/lar01joka140900332/31547341-%ED%9D%B0%EC%83%89-%EB%B0%B0%EA%B2%BD%EC%97%90-%EB%86%80%EB%9E%80-%ED%91%9C%EC%A0%95.jpg"/>
-                    <div id="message">
-                        좋지 않은 <br>
-                        소비입니다.
-                    </div>
-                </div>    
-            </div>
         </section>
     </section>
-
-
-
     <script src="expenditure/expenditure.js"></script>
+    <script src="https://kit.fontawesome.com/c5c6a57a0c.js" crossorigin="anonymous"></script>
 </body>
 </html>

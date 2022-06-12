@@ -1,13 +1,14 @@
 body{
+    font-family: 'Oswald', sans-serif;
     margin: 0 80px;
     margin-top: 30px;
-}
-img{
-    width: 55px;
-    height: 55px;
+    height: 150vh;
+    background: rgb(0,176,255);
+background: linear-gradient(243deg, rgba(0,176,255,1) 0%, rgba(83,160,238,1) 38%, rgba(50,200,239,1) 68%, rgba(115,218,237,1) 68%, rgba(148,187,233,1) 85%);
 }
 .separate-section{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .header{
@@ -15,6 +16,12 @@ img{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
+}
+#show-totalMoney{
+    margin-right: 32px;
+}
+.header h1{
+    color:#113dff;
 }
 .header div{
     font-size: 20px;
@@ -25,16 +32,25 @@ img{
     width: 35%;
 
 }
+.left-side-top{
+    width: 300px;
+}
 .analyze{
     margin-bottom: 40px;
+}
+.analyze a{
+    font-style: none;
+    text-decoration: none;
+    color: black
 }
 
 .analyze span{
     margin: 1rem;
     padding: 0.5rem;
     cursor: pointer;
-    border-bottom: 4px solid black;
+    border-bottom: 4px solid rgb(0, 27, 150);
     font-weight: 600;
+    color:#001b96;
 }
 
 .input-area input, .input-area button{
@@ -43,25 +59,40 @@ img{
     border: none;
     outline: none;
 }
+input::placeholder{
+    color: white;
+    opacity: 0.5;
+}
+input:focus::placeholder{
+    opacity: 0;
+}
 .input-area input{
-    background-color: aqua;
+    background-color: #48a4f0;
     padding-right: 90px;
-    border-radius: 15px;
+    border-radius: 8px;
+    transition:  1s ease-in;
 }
-input[type="submit"]{
-    cursor: pointer;
+.input-area button{
+    background-color: #113dff;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 123px;
+    transition: 0.3s ease-in;
 }
-#submit{
-    background-color: rgb(132, 132, 228);
-    padding: 10px 30px;
+.input-area button:hover{
+    background: rgb(255, 255, 255);
+    font-weight: 600;
+    color:#001b96;
 }
 .right-section{
     width: 60%;
-    border: 2px solid rgb(0, 0, 0);
+    background-color:#72b7f0;
+    /* border: 2px solid rgb(0, 0, 0); */
     position: relative;
-}
-.right-history img{
-    margin-left: 30px;
+    box-shadow: 5px 5px 5px rgb(7, 7, 112);
+    border: 10px solid rgba(0,176,255,1);
+    border-style: inset;
+    border-radius: 5px;
 }
 .usage-header{
     display: flex;
@@ -69,18 +100,71 @@ input[type="submit"]{
     margin-bottom: 30px;
 }
 
-.history-contents{
+#history-contents{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 15px;
-    border: 1px solid rgba(0,0,0,0.3);
     margin-bottom: 5px;
     padding-bottom: 5px;
+    background-color: rgb(179, 228, 248);
+    border-radius: 5px;
+}
+.right-history{
+    padding-right: 5px;
 }
 .left-history div{
     margin: 0.6rem;
 }
+.left-side-bottom{
+    width: 250px;
+    margin-top: 30px;
+    background-color:#72b7f0;
+    box-shadow: 5px 5px 5px rgb(0, 0, 136);
+    border-radius: 5px;
+    border: 10px solid rgba(0,176,255,1);
+    border-style: inset;
+    padding: 0 10px;
+}
+.rank-header{
+    
+    margin-bottom: 20px;
+}
+
+.rank-header-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rank-contents{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 10px;
+    /* border:2px solid black; */
+    background-color: #4795d4;
+    padding: 0 8px;
+    border-radius: 4px;
+}
+.rank-contents-info div{
+    margin:5px
+}
+.rank-number{
+    background-color: rgb(37, 56, 235);
+    color: white;
+    padding: 2px 10px;
+    margin-right: 15px;
+    border-radius: 18px;
+}
+
+i{
+    color:#1142e6
+}
+#message{
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
 
 
 
@@ -103,11 +187,15 @@ input[type="submit"]{
 
 
 @media screen and (max-width: 1053px){
-    .input-area input, .input-area button{
+    .input-area input{
         margin-top: 15px;  
-        padding: 0.3rem;  
+        padding: 0.5rem;  
         border: none;
         outline: none;
+        padding-right: 40px;
+    }
+    .input-area button{
+        padding: 8px 94px;
     }
     .analyze span{
         margin: 0.7rem;
@@ -116,26 +204,31 @@ input[type="submit"]{
         border-bottom: 4px solid black;
         font-weight: 600;
     }
+    .left-side-bottom{
+        width: 200px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     body{
-        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
     }
-	.separate-section{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 50%);
+    .header{
         display: block;
+        /* flex-wrap: wrap; */
     }
     .right-section{
         width: 400px;
         margin-top: 50px;
+        margin-left: 15px;
     }
     .left-section{
         width: 400px;
-        padding-left: 80px;
+       margin-left: 105px;
+
     }
     .input-area input{
         margin-top: 15px;  
