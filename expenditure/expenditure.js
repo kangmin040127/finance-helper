@@ -7,7 +7,8 @@ let submitBtn = document.getElementById('submitBtn')
 let smileFace = `<i class="fa-solid fa-face-smile fa-xl"></i>`;
 let sadFace = `<i class="fa-solid fa-face-sad-cry fa-xl"></i>`
 
-let historyList = [];
+export let historyList = [];
+
 
 submitBtn.addEventListener('click', addHistory);
 
