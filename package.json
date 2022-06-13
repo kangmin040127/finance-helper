@@ -16,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/kangmin040127/finance-helper/issues"
   },
-  "homepage": "https://github.com/kangmin040127/finance-helper#readme"
+  "homepage": "https://github.com/kangmin040127/finance-helper#readme",
+  "type": "module"
 }

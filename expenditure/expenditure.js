@@ -9,7 +9,6 @@ let sadFace = `<i class="fa-solid fa-face-sad-cry fa-xl"></i>`
 
 export let historyList = [];
 
-
 submitBtn.addEventListener('click', addHistory);
 
 const WasteMessage = '좋지 않은 <br>소비입니다.'

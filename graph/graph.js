@@ -22,7 +22,7 @@ let myChart = document.getElementById('myChart').getContext('2d');
         things.push('옷')
 
         import {historyList} from './expenditure/expenditure.js';
-        console.log(historyList);
+        console.log(historyList)
 
         let massPriceChart = new Chart(myChart, {
             type:'bar', // 다양한 모양의 그래프 ex) horizontal, bar, pie, line, doughnut, radar
