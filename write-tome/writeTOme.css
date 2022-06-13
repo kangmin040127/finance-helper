@@ -1,0 +1,51 @@
+#container{
+    height: 80vh;
+    background-image: url('https://img.kr.news.samsung.com/kr/wp-content/uploads/2014/10/0138.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgba( 255, 255, 255, 0.5 );
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+
+}
+
+#container textarea{
+    background-color: #ddd7cb;
+    border: none;
+    outline: none;
+    width: 75%;
+    height: 85%;
+    margin-top: 50px;
+    border-radius: 5px;
+
+}
+#container textarea::placeholder{
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+}
+
+#container #button{
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+#clearBtn{
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+}
+#submit{
+    position: absolute;
+    bottom: 60px;
+    right: 100px;
+}

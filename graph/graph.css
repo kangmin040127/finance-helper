@@ -3,6 +3,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(180, 234, 242);
 }
 .box{
     width: 80%;
