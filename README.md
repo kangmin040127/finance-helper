@@ -17,6 +17,6 @@
 회고 페이지<br>
 ![image](https://user-images.githubusercontent.com/103891387/173385673-a45b9d6d-1aed-4cee-8d43-541a41f95399.png)
 
-화전 페이지<br>
+환전 페이지<br>
 ![image](https://user-images.githubusercontent.com/103891387/173543049-b614383d-942c-4b5d-871e-041dc58b062b.png)
 
