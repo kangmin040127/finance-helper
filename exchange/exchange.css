@@ -1,0 +1,60 @@
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(108, 183, 245);
+    height: 100vh;
+}
+
+.money-section{
+    height: 50%;
+    width: 100%;
+}
+
+/* #select_value1{
+    text-align: center;
+} */
+#thatIhave{
+    width: 400px;
+    background-color: rgb(188, 188, 236);
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 47vh;
+}
+#thatIwant{
+    background-color: rgb(171, 238, 238);
+    border-radius: 10px;
+    height: 47vh;
+}
+select{
+    padding: 1px 44.5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+#inputbox{
+    position: absolute;
+    left: 50%;
+    top: 7.5%;
+    transform: translateX(-50%);
+}
+#outputbox{
+    position: absolute;
+    left: 50%;
+    top: 57%;
+    transform: translateX(-50%);
+}
+input{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+button{
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    height:5%;
+    width: 20%;
+}
